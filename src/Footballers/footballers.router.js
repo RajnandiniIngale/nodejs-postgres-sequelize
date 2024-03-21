@@ -16,4 +16,4 @@ router.get("/getAllFootballers",getAllFootballers);
 
 router.get("/getSingleFootballer/:id",getSingleFootballer);
 
-export const footballersRouter = router;
+export default router;

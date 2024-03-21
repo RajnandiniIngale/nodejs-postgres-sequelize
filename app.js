@@ -2,8 +2,9 @@ import pkg from 'express';
 const express = pkg;
 
 import 'dotenv/config';
+import router from './src/Footballers/footballers.router.js';
 
-import { footballersRouter } from "./src/Footballers/footballers.router.js";
+
 
 const app = express();
 
@@ -11,7 +12,7 @@ const app = express();
 app.use(express.json());
 
 // Configure routes
-app.use("/api/footballers", footballersRouter);
+app.use("/api/footballers", router);
 
 
 
